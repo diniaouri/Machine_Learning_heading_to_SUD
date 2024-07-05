@@ -153,3 +153,36 @@ test.py [--data data_path]
 --data          Path to the dataset
 ```
       
+## References
+
+* Breiman, L. Random Forests. Machine Learning 45, 5–32 (2001). https://doi.org/10.1023/A:1010933404324.
+
+* Clark, K., Luong, M. T., Le, Q. V., & Manning, C. D. (2020). Electra: Pre-training text encoders as discriminators rather than generators.
+
+* Devlin, J., Chang, M.-W., Lee, K., and Toutanova, K. (2019). Bert: Pre-training of deep bidirectional transformers for language understanding.
+
+* Friedman, J. H. (2001). Greedy function approximation: a gradient boosting machine. Annals of statistics, 1189-1232.
+
+* Hearst, M. A., Dumais, S. T., Osuna, E., Platt, J., & Scholkopf, B. (1998). Support vector machines. IEEE Intelligent Systems and their applications, 13(4), 18-28.
+  
+* Janiesch, C., Zschech, P. & Heinrich, K. Machine learning and deep learning. Electron Markets 31, 685–695 (2021). https://doi.org/10.1007/s12525-021-00475-2. 
+
+* Jiang, A., Sablayrolles, A., Mensch, A., Bamford, C., Devendra, S., Chaplot, D., De Las Casas, F., Bressand, G., Lengyel, G., Lample, L., Saulnier, R., Lavaud, M.-A., Lachaux, P., Stock, T., Le Scao, T., Lavril, T., Wang, T., Lacroix, W., & Sayed. (2023). Mistral 7B. 
+
+* Kibriya, A. M., Frank, E., Pfahringer, B., & Holmes, G. (2005). Multinomial naive bayes for text categorization revisited. In AI 2004: Advances in Artificial Intelligence: 17th Australian Joint Conference on Artificial Intelligence, Cairns, Australia, December 4-6, 2004. Proceedings 17 (pp. 488-499). Springer Berlin Heidelberg.
+
+* Lan, Z., Chen, M., Goodman, S., Gimpel, K., Sharma, P., & Soricut, R. (2019). Albert: A lite bert for self-supervised learning of language representations. arXiv preprint arXiv:1909.11942. 
+
+* Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L., Stoyanov, V., & Allen, P. (2019). RoBERTa: A Robustly Optimized BERT Pretraining Approach. 
+
+* MosaicML NLP Team. (2023). Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs. Databricks. https://www.databricks.com/blog/mpt-7b.
+
+* Touvron, H., Lavril, T., Izacard, G., Martinet, X., Lachaux, M.-A., Lacroix, T., Rozière, B., Goyal, N., Hambro, E., Azhar, F., Rodriguez, A., Joulin, A., Grave, E., & Lample, G. (2023). LLaMA: Open and Efficient Foundation Language Models.
+
+* Wright, R. E. (1995). Logistic regression. In L. G. Grimm & P. R. Yarnold (Eds.), Reading and understanding multivariate statistics (pp. 217–244). American Psychological Association.
+  
+* Yuan, L. and Rizoiu, M.-A. (2022). Detect hate speech in unseen domains using multi-task learning: A case study of political public figures.
+  
+* Xu, Y., Zhou, Y., Sekula, P., & Ding, L. (2021). Machine learning in construction: From shallow to deep learning. Developments in the built environment, 6, 100045. 
+
+
