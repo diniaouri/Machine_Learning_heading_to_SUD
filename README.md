@@ -7,6 +7,39 @@ Repository of the paper: "Machine Learning is heading to the SUD (Socially Unacc
 
 Details on the data acquisition and preprocessing are described [here](data/data.md).
 
+## Models
+We designed a framework of SOTA models differentiating between 3 model families: Shallow Learning Models (SLMs), Masked Language Models (MLMs), and Causal Language Models (CLMs). A summary of the models we finetuned can be found below:
+
+
+| Category | Models                          | Citation                      |
+|----------|---------------------------------|-------------------------------|
+| **SLM**  | **(Shallow Learning Models)**   |                               |
+|          | Stochastic Gradient Boosting (SGB) | Friedman (2001)               |
+|          | Logistic Regression (LR)        | Wright (1995)                 |
+|          | Multinomial Naive Bayes (MNB)   | Kibriya et al. (2003)         |
+|          | Random Forest (RF)              | Breiman (2001)                |
+|          | Support Vector Machines (SVM)   | Hearst et al. (1998)          |
+| **MLM**  | **(Masked Language Models)**    |                               |
+|          | BERTBASE                        | Devlin et al. (2019)          |
+|          | ALBERTBASE                      | Lan et al. (2019)             |
+|          | RoBERTaBASE                     | Liu et al. (2019)             |
+|          | ELECTRABASE                     | Clark et al. (2020)           |
+| **CLM**  | **(Causal Language Models)**    |                               |
+|          | Llama-2-7b-hf                   | Touvron et al. (2023)         |
+|          | Mistral-7B-v0.1                 | Jiang et al. (2023)           |
+|          | mpt-7b                          | MosaicML NLP Team (2023)      |
+
+* **Shallow Learning Models**   
+
+Shallow learning models, defined as a category encompassing traditional ML algorithms proposed before 2006, are characterized by their simplicity, typically featuring few layers or processing units (Xu et al., 2021). These models are well-suited for tasks with straightforward data patterns. However, their basic architecture may limit their capacity to capture complex relationships and adapt to new data. Consequently, the performance of such models heavily relies on the efficacy of the feature extraction process (Janiesch et al., 2021). Within this overarching classification, we specifically explore Gradient Boosting (GB), Logistic Regression (LR), Multinomial Naive Bayes (MNB), Random Forest (RF), and Support Vector Machines (SVM). 
+
+* **Masked Language models**  
+
+Masked language models (MLMs), as described in Devlin et al. (2019), are deep learning models that have been trained to fill in the blanks for masked tokens in a given input sequence. Specifically, MLMs aim to predict the original vocabulary identity of a masked word, relying solely on the context provided by surrounding words. The key advantage of these models is their ability to consider both preceding and subsequent tokens in the input sequence, enabling a bidirectional understanding during the prediction process. Masked Language models are acclaimed for their high performances in classification tasks. Within this category, we finetune and assess the performance of BERTBASE (Devlin et al., 2019; Yuan and Rizoiu, 2022) and some of its architectural variants introduced to enhance overall performance and reduce computational complexity, namely ALBERTBASE, (Lan et al., 2019)  RoBERTaBASE (Liu et al., 2019) and ELECTRABASE (Clark et al., 2020). 
+
+* **Causal Language models**  
+
+As explained in the previous section, MLMs are bidirectional models trained to comprehend context from both directions. In contrast, CLMs, are unidirectional models that only consider the preceding context for predictions. CLMs are trained to anticipate the next token in a sequence solely based on prior tokens, making them particularly adept at text generation tasks. The CLM models fine-tuned and evaluated in this study are Llama 2 (Llama-2-7b-hf) (Touvron et al. (2023), Mistral (Mistral-7B-v0.1) (Jiang et al., 2023) and MPT (mpt-7b) (MosaicML NLP team, 2023). 
 
 ## Dependencies  
 
