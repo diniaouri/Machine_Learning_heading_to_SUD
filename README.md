@@ -40,6 +40,34 @@ Masked language models (MLMs), as described in Devlin et al. (2019), are deep le
 * **Causal Language models**  
 
 As explained in the previous section, MLMs are bidirectional models trained to comprehend context from both directions. In contrast, CLMs, are unidirectional models that only consider the preceding context for predictions. CLMs are trained to anticipate the next token in a sequence solely based on prior tokens, making them particularly adept at text generation tasks. The CLM models fine-tuned and evaluated in this study are Llama 2 (Llama-2-7b-hf) (Touvron et al. (2023), Mistral (Mistral-7B-v0.1) (Jiang et al., 2023) and MPT (mpt-7b) (MosaicML NLP team, 2023). 
+## Main Results
+
+* **Optimal Performing Model Per Class and Dataset**
+
+| Dataset     | Abusive | Aggressive | Hate | Identity Hate | Insult | Neither | Obscene | Offensive | Profane | Severe Toxic | Threat | Toxic | Best Model |
+|-------------|---------|------------|------|---------------|--------|---------|---------|-----------|---------|--------------|--------|-------|------------|
+| **GSUD**    | 0.79    | 0.64       | 0.67 | 0.6           | 0.68   | 0.36    | 0.42    | 0.5       | 0.94    | 0.25         | 0.75   | 0.31  | BERT       |
+|             | 0.8     | 0.64       | 0.6  | 0.38          | 0.51   | 0.94    | 0.34    | 0.75      | 0.94    | 0.34         | 0.75   | 0.33  | ELECTRA    |
+|             | 0.8     | 0.67       | 0.68 | 0.42          | 0.5    | 0.94    | 0.25    | 0.75      | 0.37    | 0.42         | 0.46   | 0.17  | RoBERTa    |
+| **Davidson**| -       | -          | 0.46 | -             | 0.9    | -       | 0.94    | -         | -       | -            | -      | -     | ELECTRA    |
+| **Founta**  | 0.89    | -          | 0.42 | -             | -      | 0.91    | -       | -         | -       | -            | -      | -     | MISTRAL    |
+| **Fox**     | -       | -          | 0.67 | -             | -      | 0.82    | -       | -         | -       | -            | -      | -     | MISTRAL    |
+| **Gab**     | -       | -          | -    | -             | 0.89   | -       | -       | -         | 0.91    | -            | -      | -     | GB         |
+|             |         |            |      |               | 0.88   |         |         |           | 0.91    |              |        |       | ALBERT     |
+|             |         |            |      |               | 0.89   |         |         |           | 0.91    |              |        |       | RoBERTa    |
+| **Grimminger** | -    | -          | 0.58 | -             | -      | 0.95    | -       | -         | -       | -            | -      | -     | ELECTRA    |
+| **HASOC2019** | -     | -          | 0.29 | -             | -      | 0.8     | -       | 0.36      | 0.57    | -            | -      | -     | ELECTRA    |
+| **HASOC2020** | -     | -          | 0.22 | -             | -      | 0.91    | -       | 0.3       | 0.83    | -            | -      | -     | ELECTRA    |
+| **Hateval** | -       | -          | -    | -             | 0.75   | -       | -       | -         | 0.79    | -            | -      | -     | ELECTRA    |
+|             |         |            |      |               | 0.75   |         |         |           | 0.8     |              |        |       | RoBERTa    |
+|             |         |            |      |               | 0.76   |         |         |           | 0.78    |              |        |       | MISTRAL    |
+| **Jigsaw**  | -       | -          | -    | 0.46          | 0.57   | 0.98    | 0.38    | -         | -       | 0.4          | 0.56   | 0.3   | ELECTRA    |
+| **Olid**    | -       | -          | -    | -             | -      | -       | -       | 0.85      | -       | 0.67         | -      | -     | BERT       |
+|             |         |            |      |               |        |         |         | 0.84      |         | 0.68         |        |       | ELECTRA    |
+| **Reddit**  | -       | -          | -    | -             | 0.77   | -       | -       | 0.92      | -       | -            | -      | -     | LLAMA 2    |
+|             |         |            |      |               | 0.78   |         |         | 0.93      |         |              |        |       | MISTRAL    |
+| **Stormfront** | -    | -          | 0.6  | -             | -      | 0.96    | -       | -         | -       | -            | -      | -     | RoBERTa    |
+| **Trac**    | -       | 0.84       | -    | -             | -      | 0.71    | -       | -         | -       | -            | -      | -     | MISTRAL    |
 
 ## Dependencies  
 
