@@ -2,6 +2,26 @@
 **Dimitra Niaouri, Bruno Machado Carneiro, Michele Linardi, Julien Longhi**
 
 ## Data
+We selected 13 public datasets originating from different annotation schemas, totaling 470,768 samples across 12 classes. 
+
+| Dataset           | Source                            | Sample Type                  | # Samples     | Topic                         |
+|-------------------|-----------------------------------|------------------------------|---------------|------------------------------------|
+| **Davidson**      | Davidson et al., 2017            | Tweets                       | 25,000        | Generic                           |
+| **Founta**        | Founta et al., 2018              | Tweets                       | 100,000       | Generic                           |
+| **Fox**           | Yuan and Rizoiu, 2022            | Threads                      | 1,528         | Fox News Posts                    |
+| **Gab**           | Qian et al., 2019                | Posts                        | 34,000        | Generic                           |
+| **Grimminger**    | Grimminger and Klinger, 2021     | Tweets                       | 3,000         | US Presidential Election          |
+| **HASOC2019**     | Wang et al., 2019                | Facebook, Twitter posts      | 12,000        | Generic                           |
+| **HASOC2020**     | Ghosh Roy et al., 2021           | Facebook posts               | 12,000        | Generic                           |
+| **Hateval**       | MacAvaney et al., 2019           | Tweets                       | 13,000        | Misogynist and Racist content     |
+| **Jigsaw**        | van Aken et al., 2018            | Wikipedia talk pages         | 220,000       | Generic                           |
+| **Olid**          | Zampieri et al., 2019            | Tweets                       | 14,000        | Generic                           |
+| **Reddit**        | Yuan and Rizoiu, 2022            | Posts                        | 22,000        | Toxic subjects                    |
+| **Stormfront**    | MacAvaney et al., 2019           | Threads                      | 10,500        | White Supremacy Forum             |
+| **Trac**          | Aroyehun and Gelbukh, 2018       | Facebook posts               | 15,000        | Generic                           |
+
+*Table 1: Summary of datasets (Carneiro et al., 2023)*
+
 
 Details on the data acquisition and preprocessing are described [here](data/data.md).
 
